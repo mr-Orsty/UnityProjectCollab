@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4226612358894147268}
   - component: {fileID: -2577511068048438695}
   - component: {fileID: -7090027630928185102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +33,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3085088325799412628}
-  - {fileID: 7509461639863954461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4226612358894147268
@@ -118,9 +117,10 @@ GameObject:
   - component: {fileID: 7334678178271151369}
   - component: {fileID: 4706232265231234882}
   - component: {fileID: 236573190366572640}
-  m_Layer: 0
+  - component: {fileID: 5093006447191760191}
+  m_Layer: 7
   m_Name: Player_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,8 @@ Transform:
   m_LocalPosition: {x: -0.2833388, y: 0.30699944, z: 2.043838}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7509461639863954461}
   m_Father: {fileID: 1223399102951244448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7334678178271151369
@@ -351,6 +352,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!50 &5093006447191760191
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325927628687992993}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4579276794829434231
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +391,7 @@ GameObject:
   - component: {fileID: 4866490919567586918}
   - component: {fileID: 8982596537415303161}
   - component: {fileID: 8589511772857341364}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,16 +406,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579276794829434231}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.043838}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6666666, y: 1.6666666, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5614003186741938425}
-  m_Father: {fileID: 1223399102951244448}
+  m_Father: {fileID: 3085088325799412628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.274, y: 1.1187}
+  m_AnchoredPosition: {x: 0.0155646205, y: 1.3528342}
   m_SizeDelta: {x: 3.1912, y: 1.1565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4866490919567586918
@@ -464,7 +492,7 @@ GameObject:
   - component: {fileID: 5614003186741938425}
   - component: {fileID: 393621879788034646}
   - component: {fileID: 3091155623885784524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
